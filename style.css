@@ -145,16 +145,7 @@ body {
   color: var(--text-dark);
 }
 
-/*.graph-box {
-  height: 350px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 1%;
-  padding: 20px;
-  flex-wrap: nowrap;
-  gap: 20px;
-}*/
+
 .graph-box {
     display: flex;
     flex-direction: row;
@@ -169,16 +160,11 @@ body {
 @media (max-width: 768px) {
 	.graph-box {
 		flex-direction: column;
-		
+		padding: 0;
+		margin-bottom: 50px;
 	}
 }
-/*.chart-container {
-    position: relative;
-    height: 350px;
-    width: 100%;
-	margin: 0;
-	margin-bottom: 30px;
-}*/
+
 .chart-container {
     position: relative;
     width: 48%;           /* side by side on large screens */
@@ -188,8 +174,18 @@ body {
 
 @media (max-width: 768px) {
 	.chart-container {
-		height: 350px;
+		height: 450px;
 		width: 100%;
+	}
+	.chart-section {
+		padding: 10px;
+		margin-bottom: 50px;
+	}
+	.container {
+		padding: 10px;
+	}
+	body {
+		padding: 7px;
 	}
 }
 
@@ -231,6 +227,11 @@ body {
   margin-top: 20px;
   color: var(--text-light);
   font-size: 0.9rem;
+}
+.footer small {
+	font-size: 1rem;
+	text-align: center;
+	display: block;
 }
 
 /* -------- RESPONSIVE -------- */

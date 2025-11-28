@@ -173,6 +173,7 @@ function drawChart(points) {
         },
         options: {
             responsive: true,
+			maintainAspectRatio: false,
             scales: {
                 y: { beginAtZero: false },
                 x: { display: true }
@@ -200,6 +201,7 @@ function drawPercentChart(labels, data) {
         },
         options: {
             responsive: true,
+			maintainAspectRatio: false,
             scales: {
                 y: { beginAtZero: true, max: 10 },
                 x: { display: true }
