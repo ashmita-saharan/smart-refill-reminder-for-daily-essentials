@@ -222,3 +222,10 @@ document.getElementById("updateButton").addEventListener("click", () => {
     console.log("Update button clicked → refreshing data...");
     loadData();  // Reloads ThingSpeak + updates graph
 });
+
+function reloadPageAfterDelay() {
+	setTimeout(function(){
+		location.reload();
+	}, 15000);
+}
+reloadPageAfterDelay();
